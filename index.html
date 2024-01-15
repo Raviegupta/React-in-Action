@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div>
+        <h1>LIST OF FRUITS</h1>
+        <ul>
+            <li>Apple</li>
+            <li>Mango</li>
+            <li>Banana</li>
+        </ul>
+    </div>
+    <div id="root"></div>
+
+
+    <script>
+        const container = document.createElement('div');
+        const heading = document.createElement('h1');
+        heading.innerHTML = "LIST OF FRUITS"
+        container.appendChild(heading);
+
+        const ul = document.createElement('ul');
+        const li1 = document.createElement('li')
+        const li2 = document.createElement('li')
+        const li3 = document.createElement('li')
+        li1.innerHTML = 'Apple'
+        li2.innerHTML = 'Mango'
+        li3.innerHTML = 'Banana'
+
+        ul.appendChild(li1, li2);
+        ul.appendChild(li2);
+        ul.appendChild(li3);
+        container.appendChild(ul);
+
+        const root = document.getElementById('root');
+        root.appendChild(container);
+    </script>
+</body>
+</html>
