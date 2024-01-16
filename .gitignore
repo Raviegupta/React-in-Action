@@ -1,0 +1,9 @@
+# ignore node_modules
+/node_modules
+
+# ignore parcel related files
+.parcel-cache
+dist/
+
+linkedIn.md
+plans.txt
