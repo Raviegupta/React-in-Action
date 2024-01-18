@@ -10,7 +10,9 @@
 }
 
 h1 {
-    border: 2px solid red;
+  /* border: 2px solid red; */
+  text-align: center;
+  margin: 10px;
 }
 
 .header {
